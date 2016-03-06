@@ -3,8 +3,9 @@
 
 ![logo](http://7xrl8t.com1.z0.glb.clouddn.com/alarm.png)
 
-想用电脑的网易云音乐来做起床闹钟？试试该脚本吧。   
-仅支持 OSX，其他系统欢迎提交 PR。
+一天的早晨应该听着歌曲起床，让你能以愉快的心情。   
+只可惜现在都流行在线听歌，所以我写了个脚本，让电脑每天定时启动网易云音乐播放歌曲。    
+**仅支持 OSX**，其他系统欢迎提交 PR。
 
 ## 原理
 该脚本工作原理很简单，就是自动打开网易云音乐，发送播放歌曲的命令。
@@ -19,6 +20,7 @@
 ## 配置
 
 1. 下载代码（请确保系统安装[Node.js](https://nodejs.org/en/download/)）
+
     ```bash
     $ cd /PATH/TO/PUT/FILES
     $ git clone https://github.com/chuyik/netease-alarm.git
@@ -29,12 +31,14 @@
 
 3. 测试脚本是否有用   
     如无意外，闹钟会在下一分钟响起来。（如果没响，应该是手机没被扫描到，可以去掉 MAC 地址再试。）
+
     ```bash
     # 需要输入密码
     $ make test
     ```
 
 4. 将脚本添加至系统计划任务，让闹钟每天都响起来
+
     ```bash
     # 需要输入密码
     $ make install
