@@ -1,0 +1,38 @@
+
+Phone:
+  ##
+  # 通过判断同一个网络下是否有这个 Mac 地址，来决定是否响铃
+  # 建议填你手机的 Mac 地址
+  # 
+  # Mac 地址查看方式：
+  #   - iPhone: 设置 -> 通用 -> 关于本机 -> Wi-Fi 地址
+  #
+  # (如果为空，则直接响铃)
+  MacAddress: 
+
+##
+# 响铃时间，默认每天 8 点半
+Schedule:
+
+  # 小时 (0~23)
+  Hour: 8
+
+  # 分钟 (0~59)
+  Minute: 30
+
+  # 是否仅工作日响铃（true/false）
+  OnlyWeekday: false
+
+  # 播放时长（即几分钟后停止，0 表示不停止）
+  Duration: 3
+
+##
+# 调整音量
+# （0~100，为空则不调整）
+Volume: 50
+
+
+# -------- 以下默认值就好 --------
+
+# 网易云音乐的软件路径
+NeteaseMusicLocation: /Applications/NeteaseMusic.app

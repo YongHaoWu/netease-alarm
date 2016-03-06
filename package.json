@@ -1,0 +1,27 @@
+{
+  "name": "netease-alarm",
+  "version": "1.0.0",
+  "description": "Run Netease Music as an alarm.",
+  "main": "index.js",
+  "dependencies": {
+    "arp-parse": "^0.0.2",
+    "arp-table": "^0.0.0",
+    "js-yaml": "^3.5.3",
+    "launchd.plist": "0.0.1",
+    "moment": "^2.11.2",
+    "node-osascript": "^1.0.2",
+    "open": "0.0.5",
+    "os-homedir": "^1.0.1",
+    "ps-node": "0.0.5",
+    "simple-node-logger": "^0.93.11",
+    "tracer": "^0.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "make install",
+    "test": "make test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
