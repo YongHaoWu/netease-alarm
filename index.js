@@ -1,7 +1,7 @@
 #!/bin/bash
 var logger = require('./lib/logger')
 var config = require('./lib/config')
-var alarm = require('./lib/alarm')
+var alarm = require('./lib/startAlarm')
 var lookupDevice = require('./lib/lookupDevice')
 
 lookupDevice(function(err) {

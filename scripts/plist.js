@@ -3,7 +3,7 @@ var path = require('path')
 var Plist = require('launchd.plist')
 
 var config = require('../lib/config')
-var makeReadable = require('../lib/makeReadable')
+var i18n = require('../lib/i18n')
 var isDebug = process.env.NODE_ENV === 'debug'
 var scheduleData = config.schedule
 
@@ -20,7 +20,7 @@ var PLIST_PLAY_CONFIG = {
       scheduleData.OnlyWeekday = false
     }
 
-    makeReadable.schedule(scheduleData, isDebug)
+    i18n.schedule(scheduleData, isDebug)
     return scheduleData
   }
 }
