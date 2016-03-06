@@ -13,7 +13,7 @@ function installPlist (plistId) {
     // if (err) console.error('can\'t unload plist, but still preceed', err)
 
     // Install and load plist
-    launchd.install(path.join(__dirname, '../build/' + plistId + '.plist'), function (err, stdout, stderr) {
+    launchd.install(path.join(__dirname, '../tmp/' + plistId + '.plist'), function (err, stdout, stderr) {
       if (err) return console.error('can\'t install plist', err)
       showOutput(stdout, stderr)
     })

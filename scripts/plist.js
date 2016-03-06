@@ -68,7 +68,7 @@ function build (config) {
   addCalendarInterval(plist, config.schedule())
 
   var contents = plist.build()
-  var buildDir = path.join(__dirname, '../build')
+  var buildDir = path.join(__dirname, '../tmp')
   var buildFile = path.join(buildDir, config.id + '.plist')
 
   if (!fs.existsSync(buildDir))
