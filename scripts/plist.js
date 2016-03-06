@@ -17,6 +17,7 @@ var PLIST_PLAY_CONFIG = {
     if (isDebug) {
       scheduleData.Hour = new Date().getHours()
       scheduleData.Minute = new Date().getMinutes() + 1
+      scheduleData.Duration = 1
       scheduleData.OnlyWeekday = false
     }
 

@@ -24,7 +24,7 @@ Schedule:
   OnlyWeekday: false
 
   # 播放时长（即几分钟后停止，0 表示不停止）
-  Duration: 3
+  Duration: 5
 
 ##
 # 调整音量
