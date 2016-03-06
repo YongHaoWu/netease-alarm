@@ -3,7 +3,8 @@ NODE_EXEC_PATH = $(shell which node)
 install:
 
 	@#Allowing Accessiblity
-	@#sudo ./scripts/tccutil.py -i $(NODE_EXEC_PATH)
+	@echo "需要 OSX 的辅助功能权限，请输入用户密码以便于控制网易云音乐"
+	@sudo ./scripts/tccutil.py -i $(NODE_EXEC_PATH)
 
 	@# Generating plist file
 	@node ./scripts/plist
